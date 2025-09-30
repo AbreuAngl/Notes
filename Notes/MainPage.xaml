@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Notes.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Editor
+                x:Name="CaixaEditor"
+                Text=""/>
+            <HorizontalStackLayout
+            Padding="30,0"
+            Spacing="25">
+                <Button
+                x:Name="SalvarBtn"
+                Text="Salvar" 
+                SemanticProperties.Hint="Para Salvar"
+                Clicked="SalvarBtn_Clicked"
+                HorizontalOptions="Fill" />
+                <Button
+                x:Name="ApagarBtn"
+                Text="Apagar" 
+                SemanticProperties.Hint="Para Apagar"
+                Clicked="ApagarBtn_Clicked"
+                HorizontalOptions="Fill" />
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
